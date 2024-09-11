@@ -1,24 +1,56 @@
-# README
+# Web Crawler (Backend - Ruby on Rails)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+This API scrapes entries from Hacker News and provides endpoints to fetch and filter these entries.
+The endpoints will be use in the Frontend part of these project.
 
-Things you may want to cover:
+[Frontend Repository](https://github.com/Alexr16/WebCrawler_FrontEnd)
 
-* Ruby version
+## Technologies
+- **Backend**: Ruby on Rails, PostgreSQL, Nokogiri (scraping)
+- **Testing**: RSpec for Rails
 
-* System dependencies
+## Endpoints
 
-* Configuration
+- **GET** `/api/scrape`: Scrapes the first 30 entries from [Hacker News](https://news.ycombinator.com/) and stores them in the database.
+- **GET** `/api/entries?filter=<filter>`: Fetches entries from the database. You can filter the results with:
+  - `moreThanFiveWords`: Filters entries with titles longer than five words.
+  - `lessThanOrEqualToFiveWords`: Filters entries with titles containing five words or fewer.
 
-* Database creation
+## API Documentation
 
-* Database initialization
+You can access the API documentation and try out the endpoints using **Swagger**:
 
-* How to run the test suite
+This will open the Swagger UI where you can interact with the API and see detailed documentation for each endpoint.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Running the Application
 
-* Deployment instructions
+To set up the application:
 
-* ...
+1. Clone the repository:
+
+    ```bash
+    git clone <repo-url>
+    cd hacker_news_crawler
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    bundle install
+    ```
+
+3. Set up the database:
+
+    ```bash
+    rails db:create
+    rails db:migrate
+    ```
+
+4. Start the Rails server:
+
+    ```bash
+    rails s
+    ```
+
+5. Navigate to [http://localhost:3000/api-docs](http://localhost:3000/api-docs) to view and interact with the Swagger documentation.
