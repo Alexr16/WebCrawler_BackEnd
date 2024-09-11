@@ -38,6 +38,7 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+  gem 'rspec-rails', '~> 5.0.0'
 end
 
 group :development do
@@ -45,8 +46,13 @@ group :development do
   # gem "spring"
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+  gem 'rspec-rails', '~> 5.0.0'
 end
 
 #To scrape data
-
 gem 'nokogiri'
+
+#API documentation
+gem 'rswag'
+gem 'rswag-api'
+gem 'rswag-ui'
