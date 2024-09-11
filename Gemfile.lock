@@ -192,6 +192,7 @@ DEPENDENCIES
   bootsnap
   debug
   error_highlight (>= 0.4.0)
+  nokogiri
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.1)
