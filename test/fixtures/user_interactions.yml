@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  filter_type: MyString
+  request_on: 2024-09-11 13:50:43
+
+two:
+  filter_type: MyString
+  request_on: 2024-09-11 13:50:43
