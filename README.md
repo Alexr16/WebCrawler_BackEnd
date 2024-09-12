@@ -19,7 +19,7 @@ The endpoints will be use in the Frontend part of these project.
 
 ## API Documentation
 
-You can access the API documentation and try out the endpoints using **Swagger**:
+You can access the API documentation and try out the endpoints using **Swagger**: http://localhost:3000/api-docs
 
 This will open the Swagger UI where you can interact with the API and see detailed documentation for each endpoint.
 
