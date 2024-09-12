@@ -56,3 +56,6 @@ gem 'nokogiri'
 gem 'rswag'
 gem 'rswag-api'
 gem 'rswag-ui'
+
+# Cors
+gem 'rack-cors'
