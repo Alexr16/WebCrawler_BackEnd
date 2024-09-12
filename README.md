@@ -9,7 +9,8 @@ The endpoints will be use in the Frontend part of these project.
 ## Technologies
 - **Backend**: Ruby on Rails, PostgreSQL, Nokogiri (scraping)
 - **Testing**: RSpec for Rails
-
+- **Documentation**: Swagger
+- 
 ## Endpoints
 
 - **GET** `/api/scrape`: Scrapes the first 30 entries from [Hacker News](https://news.ycombinator.com/) and stores them in the database.
