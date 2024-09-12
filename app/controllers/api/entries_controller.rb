@@ -1,6 +1,7 @@
 module Api
   class EntriesController < ApplicationController
     def scrape
+      Entry.delete_all
       entries = CrawlerService.scrape_news
       CrawlerService.save_entries(entries)
 
