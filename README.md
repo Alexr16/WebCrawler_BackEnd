@@ -30,8 +30,8 @@ To set up the application:
 1. Clone the repository:
 
     ```bash
-    git clone <repo-url>
-    cd hacker_news_crawler
+    git clone https://github.com/Alexr16/WebCrawler_BackEnd.git
+    cd WebCrawler_BackEnd
     ```
 
 2. Install dependencies:
