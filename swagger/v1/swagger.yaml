@@ -1,0 +1,47 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/entries":
+    get:
+      summary: Retrieve all entries
+      tags:
+      - Entries
+      parameters:
+      - name: filter
+        in: query
+        description: Filter criteria (moreThanFiveWords or lessThanOrEqualToFiveWords)
+        schema:
+          type: string
+      responses:
+        '200':
+          description: entries found
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                    title:
+                      type: string
+                    points:
+                      type: integer
+                    comments:
+                      type: integer
+                  required:
+                  - id
+                  - title
+                  - points
+                  - comments
+        '404':
+          description: entries not found
+servers:
+- url: http://{defaultHost}
+  variables:
+    defaultHost:
+      default: www.example.com
